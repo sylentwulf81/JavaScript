@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Background Color Changer</title>
+</head>
+<body>
+    <div id="main-container" class="result-display">
+        <div id="result-container">
+            <!-- Red Value -->
+            <div id="red-value" class="result-block">
+                <div id="red-result-text" class="result-text">000</div>
+                <div id="red-lock">
+                    <button title="Lock Red Value" type="button" id="red-lock-icon" class="toggle" onclick="lockRed()" alt="Lock Red Value">🔓</button>
+                </div>
+            </div>
+    
+            <!-- Green Value -->
+            <div id="green-value" class="result-block">
+                <div id="green-result-text" class="result-text">000</div>
+                <div id="green-lock">
+                    <button title="Lock Green Value" type="button" id="green-lock-icon" class="toggle" onclick="lockGreen()" alt="Lock Green Value">🔓</button>
+                </div>
+            </div>
+    
+            <!-- Blue Value -->
+            <div id="blue-value" class="result-block">
+                <div id="blue-result-text" class="result-text">000</div>
+                <div id="blue-lock">
+                    <button title="Lock Blue Value" type="button" id="blue-lock-icon" class="toggle" onclick="lockBlue()" alt="Lock Blue Value">🔓</button>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+        
+            
+
+    <div id="controls-container">
+        <span id="primary-button-container"><button title="Randomize Background Color" type="button" id="randomize-color" class="primary-button" alt="Randomize background color" onclick="randomizeColors()">🔀</button></span>
+        <span id="copy-button-container"><button title="Copy RGB values to Clipboard" type="button" id="copy-color" class="primary-button" alt="Copy RGB Values" onclick="copyColors()"">📋</button></span>
+        <span id="reset-button-container"><button title="Reset Colors" type="button" id="reset-color" class="primary-button"  alt="Reset all colors to zero" onclick="resetColors()">🔄</button></span>
+    </div>
+
+
+    <script src="background.js"></script>
+</body>
+</html>

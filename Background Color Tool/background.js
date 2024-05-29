@@ -82,11 +82,11 @@ function handleStartup() {
         document.getElementById('blue-lock-icon').innerText = "Blue: Unlocked"
     }
 
-    red = parseInt(localStorage.getItem("redStorage")) || Math.floor(Math.random() * 256);
+    red = parseInt(localStorage.getItem("redStorage"));
     console.log(`Red storage value is ${red}`);
-    green = parseInt(localStorage.getItem("greenStorage")) || Math.floor(Math.random() * 256);
+    green = parseInt(localStorage.getItem("greenStorage"));
     console.log(`Green stored value is ${green}`);
-    blue = parseInt(localStorage.getItem("blueStorage")) || Math.floor(Math.random() * 256);
+    blue = parseInt(localStorage.getItem("blueStorage"));
     console.log(`Blue stored value is ${blue}`);
 
     document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
@@ -99,8 +99,6 @@ function handleStartup() {
     updateColor();
     storedValue();
 }
-
-
 
 
 /*
